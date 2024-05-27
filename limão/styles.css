@@ -3,7 +3,7 @@ background-image: url(imagem/45.jpg)
 }
 
 .cadastro-button {
-    background-color:#8bc34a;; /* Cor de fundo verde */
+    background-color: #8bc34a;
     border: none;
     color: white;
     padding: 15px 30px;
@@ -13,26 +13,25 @@ background-image: url(imagem/45.jpg)
     font-size: 18px;
     margin-bottom: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px black;;
+    
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
   }
   .cadastro-button:hover {
     background-color: #8bc34a;; 
-    transform: translateY(-2px); /* Efeito de levantar ligeiramente ao passar o mouse */
+    transform: translateY(-2px); 
   }
 
-  /* Estilos para o espaço do número de contato */
   .contato-space {
-    background-color: #8bc34a;; /* Cor de fundo preto */
-    color: white; /* Cor do texto branco */
-    border-radius: 10px;
-    padding: 2px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #8bc34a;; 
+    color: white;
+    border-radius: 1px;
+    padding: 1px;
+    
   }
   .contato-space h2 {
-    margin-top: 0;
-    margin-bottom: 10px;
+    margin-top: 1px;
+    margin-bottom: 1px;
   }
   body {
     font-family: Arial, sans-serif;
@@ -44,17 +43,17 @@ header {
     background-color: #8bc34a;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px ;
 }
 nav {
     background-color: #78a743;
     text-align: center;
-    padding: 10px 0;
+    padding: 5px 0;
 }
 nav a {
     color: #fff;;
     text-decoration: none;
-    margin: 0 20px;
+    margin:  20px;
 }
 nav a:hover {
     text-decoration: underline;
@@ -67,8 +66,10 @@ footer {
     background-color: #8bc34a;
     color: #fff;
     text-align: center;
-    padding: 10px 0; 
+    padding: 10px ; 
     position: fixed;
     bottom: 0;
     width: 100%;
 } 
+
+
