@@ -1,5 +1,5 @@
 body{
-background-image: url(imagem/46.jpg)
+background-image: url(imagem/45.jpg)
 }
 
 .cadastro-button {
@@ -72,4 +72,7 @@ footer {
     width: 100%;
 } 
 
-
+    body{
+  background-image: url(imagem/45.jpg);
+  background-size: 375px 875px;
+    background-repeat: no-repeat;}
