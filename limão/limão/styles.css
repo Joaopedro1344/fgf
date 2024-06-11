@@ -1,0 +1,78 @@
+body{
+background-image: url(imagem/45.jpg)
+}
+
+.cadastro-button {
+    background-color: #8bc34a;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  .cadastro-button:hover {
+    background-color: #8bc34a;; 
+    transform: translateY(-2px); 
+  }
+
+  .contato-space {
+    background-color: #8bc34a;; 
+    color: white;
+    border-radius: 1px;
+    padding: 1px;
+    
+  }
+  .contato-space h2 {
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #8bc34a;
+    color: #fff;
+    text-align: center;
+    padding: 20px ;
+}
+nav {
+    background-color: #78a743;
+    text-align: center;
+    padding: 5px 0;
+}
+nav a {
+    color: #fff;;
+    text-decoration: none;
+    margin:  20px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+section {
+    padding: 20px;
+    text-align: center;
+}
+footer {
+    background-color: #8bc34a;
+    color: #fff;
+    text-align: center;
+    padding: 10px ; 
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+} 
+
+    body{
+  background-image: url(imagem/45.jpg);
+  background-size: 375px 875px;
+    background-repeat: no-repeat;}
