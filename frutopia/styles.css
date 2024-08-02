@@ -41,7 +41,7 @@ header p {
     gap: 20px;
 }
 
-.suco {
+.suco-limao {
     background-color: hsl(0, 0%, 100%);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -50,12 +50,40 @@ header p {
     width: 200px;
     text-align: center;
 }
+.suco-laranja {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    width: 200px;
+    text-align: center;
+}
+.suco-abacaxi {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    width: 200px;
+    text-align: center;
+}
+.suco-uva {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    width: 200px;
+    text-align: center;
+
+}
 
 .suco:hover {
     transform: translateY(-10px);
 }
 
-.suco img {
+img {
     width: 100px;
     height: 100px;
    
@@ -105,8 +133,8 @@ h1, h3 {
 @keyframes rainbowText {
     0% { color: rgb(191, 255, 0); }
     20% { color: rgb(162, 255, 0); }
-    40% { color: rgb(128, 255, 0); }
-    60% { color: rgb(0, 196, 0); }
+    40% { color: rgb(91, 255, 58); }
+    60% { color: rgb(180, 164, 22); }
     80% { color: rgb(0, 216, 36); }
     100% { color: rgb(174, 255, 0); }
 }
@@ -115,39 +143,12 @@ h2{
     animation:rainbowText 2s infinite;
 }
 @keyframes rainbowText{
-  0% { color: rgb(191, 255, 0); }
+  0% { color: rgb(135, 253, 0); }
     20% { color: rgb(162, 255, 0); }
-    40% { color: rgb(128, 255, 0); }
-    60% { color: rgb(0, 196, 0); }
+    40% { color: rgb(33, 179, 52); }
+    60% { color: rgb(92, 243, 78); }
     80% { color: rgb(0, 216, 36); }
     100% { color: rgb(174, 255, 0); }
 } 
 
 
-.suco2 {
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s;
-    width: 200px;
-    text-align: center; 
-}
-.suco3 {
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s;
-    width: 200px;
-    text-align: center; 
-}
-.suco4 {
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s;
-    width: 200px;
-    text-align: center; 
-}
