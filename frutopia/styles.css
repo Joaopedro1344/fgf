@@ -125,29 +125,60 @@ footer {
         text-align: center;
 }
 
-h1, h3 {
-    color: #ff6f61;
-    animation: rainbowText 2s infinite;
-}
-
-@keyframes rainbowText {
-    0% { color: rgb(191, 255, 0); }
-    20% { color: rgb(162, 255, 0); }
-    40% { color: rgb(91, 255, 58); }
-    60% { color: rgb(180, 164, 22); }
-    80% { color: rgb(0, 216, 36); }
-    100% { color: rgb(174, 255, 0); }
-}
-
-h2{
+.rgb-uva{
     animation:rainbowText 2s infinite;
 }
 @keyframes rainbowText{
-  0% { color: rgb(135, 253, 0); }
+  0% { color: rgb(169, 0, 195); }
     20% { color: rgb(162, 255, 0); }
     40% { color: rgb(33, 179, 52); }
-    60% { color: rgb(92, 243, 78); }
-    80% { color: rgb(0, 216, 36); }
+    60% { color: rgb(207, 78, 243); }
+    80% { color: rgb(216, 0, 216); }
+    100% { color: rgb(174, 255, 0); }
+} 
+.rgb-abacaxi{
+    animation:animation 2s infinite;
+}
+@keyframes animation{
+  0% { color: rgb(235, 198, 12); }
+    20% { color: rgb(255, 238, 0); }
+    40% { color: rgb(33, 179, 52); }
+    60% { color: rgb(224, 243, 78); }
+    80% { color: rgb(209, 226, 19); }
+    100% { color: rgb(174, 255, 0); }
+} 
+.rgb-laranja{
+    animation:animation2 2s infinite;
+}
+@keyframes animation2{
+  0% { color: rgb(250, 0, 0); }
+    20% { color: rgb(255, 0, 0); }
+    40% { color: rgb(33, 179, 52); }
+    60% { color: rgb(224, 243, 78); }
+    80% { color: rgb(209, 226, 19); }
+    100% { color: rgb(174, 255, 0); }
+} 
+.rgb-limao{
+    animation:animation3 2s infinite;
+}
+@keyframes animation3{
+  0% { color: rgb(250, 0, 0); }
+    20% { color: rgb(255, 0, 0); }
+    40% { color: rgb(33, 179, 52); }
+    60% { color: rgb(224, 243, 78); }
+    80% { color: rgb(209, 226, 19); }
+    100% { color: rgb(174, 255, 0); }
+} 
+
+.Frutopia{
+    animation:rainbowText4 2s infinite;
+}
+@keyframes rainbowText4{
+  0% { color: rgb(169, 0, 195); }
+    20% { color: rgb(162, 255, 0); }
+    40% { color: rgb(33, 179, 52); }
+    60% { color: rgb(207, 78, 243); }
+    80% { color: rgb(216, 0, 216); }
     100% { color: rgb(174, 255, 0); }
 } 
 
