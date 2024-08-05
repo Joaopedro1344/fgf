@@ -17,48 +17,78 @@
             <div class="sucos-container">
                 <div class="suco-limao">
                     <img src="imagens/limao.png" alt="Suco de Limão">
-                    <h3 class="rgb-limao">Suco de Limão</h3>
+                    <h3 class="rgb-limao">Suco de Limão - R$1,50</h3>
                     <button>Comprar</button>
                 </div>
                 <div class="suco-laranja">
                     <img src="imagens/laranja.png" alt="Suco de Laranja">
-                    <h3 class="rgb-laranja">Suco de Laranja</h3>
+                    <h3 class="rgb-laranja">Suco de Laranja - R$1,50</h3>
                     <button>Comprar</button>
                 </div>
                 <div class="suco-abacaxi">
                     <img src="imagens/abacaxi.png" class="abacaxi" alt="Suco de Abacaxi">
+                    
+                    <h4 class="R$ 1,50"></h4>
+
                     <h3 class="rgb-abacaxi">Suco de Abacaxi</h3>
                     <button>Comprar</button>
+                    <div class="quantity-selector2">
+                        <button onclick="decreaseQuantity()">-</button>
+                        <input type="number" id="quantity" value="1" min="1">
+                        <button onclick="increaseQuantity()">+</button>
+                    </div>
                 </div>
+                    <script>
+                        function decreaseQuantity() {
+                            let quantityInput = document.getElementById('quantity');
+                            let currentValue2 = parseInt(quantityInput.value);
+                            if (currentValue > 1) {
+                                quantityInput.value = currentValue - 1;
+                            }
+                        }
+                
+                        function increaseQuantity() {
+                            let quantityInput = document.getElementById('quantity');
+                            let currentValue = parseInt(quantityInput.value);
+                            quantityInput.value = currentValue + 1;
+                        }
+                    </script>
+                
+    
                 <div class="suco-uva">
                     <img src="imagens/uva.png" alt="Suco de Uva">
-                    <h3 class="rgb-uva">Suco de Uva</h3>
+                    <h3 class="rgb-uva">Suco de Uva - R$1,50</h3>
                     <button>Comprar</button>
-
-   
-                </style>
-            </head>
-            <body>
-                <div class="quantity-selector">
-                    <button onclick="decreaseQuantity()">-</button>
-                    <input type="number" id="quantity" value="1" min="1">
-                    <button onclick="increaseQuantity()">+</button>
+                    <div class="quantity-selector">
+                        <button onclick="decreaseQuantity()">-</button>
+                        <input type="number" id="quantity" value="1" min="1">
+                        <button onclick="increaseQuantity()">+</button>
+                    </div>
                 </div>
-            
-                <script>
-                    function decreaseQuantity() {
-                        let quantityInput = document.getElementById('quantity');
-                        let currentValue = parseInt(quantityInput.value);
-                        if (currentValue > 1) {
-                            quantityInput.value = currentValue - 1;
+                </div>
+                
+                
+                    <script>
+                        function decreaseQuantity() {
+                            let quantityInput = document.getElementById('quantity');
+                            let currentValue1 = parseInt(quantityInput.value);
+                            if (currentValue > 1) {
+                                quantityInput.value = currentValue - 1;
+                            }
                         }
-                    }
-            
-                    function increaseQuantity() {
-                        let quantityInput = document.getElementById('quantity');
-                        let currentValue = parseInt(quantityInput.value);
-                        quantityInput.value = currentValue + 1;
-                    }
-                </script>
-            </body>
-            </html>
+                
+                        function increaseQuantity() {
+                            let quantityInput = document.getElementById('quantity');
+                            let currentValue = parseInt(quantityInput.value);
+                            quantityInput.value = currentValue + 1;
+                        }
+                    </script>
+                    </section>
+                    </main>
+                </body>
+                </html>
+    
+   
+                
+                
+                
