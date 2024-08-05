@@ -34,7 +34,23 @@
                     <img src="imagens/uva.png" alt="Suco de Uva">
                     <h3 class="rgb-uva">Suco de Uva</h3>
                     <button>Comprar</button>
-                </div>
-               
-            </div>
+                
+           
+        </head> 
+        <body> 
+            <div class="container"> <h1 class="product-title">Produto Exemplo</h1> 
+                <div class="quantity-selector"> 
+                    <button onclick="changeQuantity(-1)">-</button>
+                     <input type="number" id="quantity" value="1" min="1">
+                      <button onclick="changeQuantity(1)">+</button> 
+                    </div>
+                 </div>
+                  <script> 
+                    function changeQuantity(amount) {
+                         const quantityInput = document.getElementById('quantity');
+                          let currentQuantity = parseInt(quantityInput.value);
+                           currentQuantity += amount; 
+                           if (currentQuantity < 1) currentQuantity = 1;}
+                        
+           
         

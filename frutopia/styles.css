@@ -130,40 +130,40 @@ footer {
 }
 @keyframes rainbowText{
   0% { color: rgb(169, 0, 195); }
-    20% { color: rgb(162, 255, 0); }
-    40% { color: rgb(33, 179, 52); }
+    20% { color: rgb(204, 117, 255); }
+    40% { color: rgb(172, 77, 175); }
     60% { color: rgb(207, 78, 243); }
     80% { color: rgb(216, 0, 216); }
-    100% { color: rgb(174, 255, 0); }
+    100% { color: rgb(226, 1, 207); }
 } 
 .rgb-abacaxi{
     animation:animation 2s infinite;
 }
 @keyframes animation{
-  0% { color: rgb(235, 198, 12); }
-    20% { color: rgb(255, 238, 0); }
-    40% { color: rgb(33, 179, 52); }
+  0% { color: rgb(255, 230, 107); }
+    20% { color: rgb(221, 206, 0); }
+    40% { color: rgb(213, 238, 73); }
     60% { color: rgb(224, 243, 78); }
-    80% { color: rgb(209, 226, 19); }
-    100% { color: rgb(174, 255, 0); }
+    80% { color: rgb(234, 255, 0); }
+    100% { color: rgb(255, 226, 61); }
 } 
 .rgb-laranja{
     animation:animation2 2s infinite;
 }
 @keyframes animation2{
-  0% { color: rgb(250, 0, 0); }
-    20% { color: rgb(255, 0, 0); }
-    40% { color: rgb(33, 179, 52); }
-    60% { color: rgb(224, 243, 78); }
+  0% { color: rgb(250, 192, 0); }
+    20% { color: rgb(255, 193, 77); }
+    40% { color: rgb(251, 255, 1); }
+    60% { color: rgb(219, 216, 0); }
     80% { color: rgb(209, 226, 19); }
-    100% { color: rgb(174, 255, 0); }
+    100% { color: rgb(255, 217, 0); }
 } 
 .rgb-limao{
     animation:animation3 2s infinite;
 }
 @keyframes animation3{
-  0% { color: rgb(250, 0, 0); }
-    20% { color: rgb(255, 0, 0); }
+  0% { color: rgb(79, 250, 0); }
+    20% { color: rgb(9, 255, 0); }
     40% { color: rgb(33, 179, 52); }
     60% { color: rgb(224, 243, 78); }
     80% { color: rgb(209, 226, 19); }
@@ -171,15 +171,51 @@ footer {
 } 
 
 .Frutopia{
-    animation:rainbowText4 2s infinite;
+    animation:rainbowText4 3s infinite;
 }
 @keyframes rainbowText4{
-  0% { color: rgb(169, 0, 195); }
+  0% { color: rgb(209, 255, 3); }
     20% { color: rgb(162, 255, 0); }
-    40% { color: rgb(33, 179, 52); }
-    60% { color: rgb(207, 78, 243); }
-    80% { color: rgb(216, 0, 216); }
+    40% { color: rgb(0, 255, 34); }
+    60% { color: rgb(40, 255, 11); }
+    80% { color: rgb(229, 255, 0); }
     100% { color: rgb(174, 255, 0); }
 } 
+
+
+     .container { 
+        background-color: white; 
+        padding: 20px; 
+        border-radius: 8px; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+         text-align: center; } 
+
+         
+
+        .quantity-selector { 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+        } 
+
+        .quantity-selector input[type="number"]
+         { width: 60px; padding: 5px; 
+            text-align: center;
+             border: 1px solid #ccc;
+              border-radius: 4px; 
+            }
+
+             .quantity-selector button {
+                 padding: 5px 10px; 
+                 margin: 0 5px; 
+                 border: none; 
+                 border-radius: 4px; 
+                 background-color: #007bff; 
+                 color: white; cursor: pointer;
+                 } 
+                 
+                 .quantity-selector button:hover { 
+                    background-color: #0056b3; }
+
 
 
