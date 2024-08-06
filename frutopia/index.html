@@ -18,77 +18,101 @@
                 <div class="suco-limao">
                     <img src="imagens/limao.png" alt="Suco de Limão">
                     <h3 class="rgb-limao">Suco de Limão - R$1,50</h3>
-                    <button>Comprar</button>
+                    <div class="quantity-selector">
+                        <button onclick="decreaseQuantity('limao')">-</button>
+                        <input type="number" id="quantity-limao" value="1" min="1">
+                        <button onclick="increaseQuantity('limao')">+</button>
+                    </div>
+                    <button onclick="comprar('limao', 1.50)">Comprar</button>
                 </div>
                 <div class="suco-laranja">
                     <img src="imagens/laranja.png" alt="Suco de Laranja">
                     <h3 class="rgb-laranja">Suco de Laranja - R$1,50</h3>
-                    <button>Comprar</button>
+                    <div class="quantity-selector">
+                        <button onclick="decreaseQuantity('laranja')">-</button>
+                        <input type="number" id="quantity-laranja" value="1" min="1">
+                        <button onclick="increaseQuantity('laranja')">+</button>
+                    </div>
+                    <button onclick="comprar('laranja', 1.50)">Comprar</button>
                 </div>
                 <div class="suco-abacaxi">
                     <img src="imagens/abacaxi.png" class="abacaxi" alt="Suco de Abacaxi">
-                    
-                    <h4 class="R$ 1,50"></h4>
-
-                    <h3 class="rgb-abacaxi">Suco de Abacaxi</h3>
-                    <button>Comprar</button>
-                    <div class="quantity-selector2">
-                        <button onclick="decreaseQuantity()">-</button>
-                        <input type="number" id="quantity" value="1" min="1">
-                        <button onclick="increaseQuantity()">+</button>
+                    <h3 class="rgb-abacaxi">Suco de Abacaxi - R$1,50</h3>
+                    <div class="quantity-selector">
+                        <button onclick="decreaseQuantity('abacaxi')">-</button>
+                        <input type="number" id="quantity-abacaxi" value="1" min="1">
+                        <button onclick="increaseQuantity('abacaxi')">+</button>
                     </div>
+                    <button onclick="comprar('abacaxi', 1.50)">Comprar</button>
                 </div>
-                    <script>
-                        function decreaseQuantity() {
-                            let quantityInput = document.getElementById('quantity');
-                            let currentValue2 = parseInt(quantityInput.value);
-                            if (currentValue > 1) {
-                                quantityInput.value = currentValue - 1;
-                            }
-                        }
-                
-                        function increaseQuantity() {
-                            let quantityInput = document.getElementById('quantity');
-                            let currentValue = parseInt(quantityInput.value);
-                            quantityInput.value = currentValue + 1;
-                        }
-                    </script>
-                
-    
                 <div class="suco-uva">
                     <img src="imagens/uva.png" alt="Suco de Uva">
                     <h3 class="rgb-uva">Suco de Uva - R$1,50</h3>
-                    <button>Comprar</button>
                     <div class="quantity-selector">
-                        <button onclick="decreaseQuantity()">-</button>
-                        <input type="number" id="quantity" value="1" min="1">
-                        <button onclick="increaseQuantity()">+</button>
+                        <button onclick="decreaseQuantity('uva')">-</button>
+                        <input type="number" id="quantity-uva" value="1" min="1">
+                        <button onclick="increaseQuantity('uva')">+</button>
                     </div>
+                    <button onclick="comprar('uva', 1.50)">Comprar</button>
                 </div>
-                </div>
-                
-                
-                    <script>
-                        function decreaseQuantity() {
-                            let quantityInput = document.getElementById('quantity');
-                            let currentValue1 = parseInt(quantityInput.value);
-                            if (currentValue > 1) {
-                                quantityInput.value = currentValue - 1;
-                            }
-                        }
-                
-                        function increaseQuantity() {
-                            let quantityInput = document.getElementById('quantity');
-                            let currentValue = parseInt(quantityInput.value);
-                            quantityInput.value = currentValue + 1;
-                        }
-                    </script>
-                    </section>
-                    </main>
-                </body>
-                </html>
-    
-   
-                
-                
-                
+            </div>
+        </section>
+        <section class="compras">
+            <h2>Compras Recentes</h2>
+            <div id="compras-list"></div>
+            <button onclick="limparCompras()">Limpar Compras</button>
+        </section>
+    </main>
+    <script>
+        function comprar(suco, preco) {
+            const quantidade = document.getElementById(`quantity-${suco}`).value;
+            const compra = {
+                suco,
+                preco,
+                quantidade,
+                total: preco * quantidade
+            };
+
+            let compras = JSON.parse(localStorage.getItem('compras')) || [];
+            compras.push(compra);
+            localStorage.setItem('compras', JSON.stringify(compras));
+
+            atualizarCompras();
+        }
+
+        function atualizarCompras() {
+            const comprasList = document.getElementById('compras-list');
+            comprasList.innerHTML = '';
+
+            let compras = JSON.parse(localStorage.getItem('compras')) || [];
+            compras.forEach((compra, index) => {
+                const div = document.createElement('div');
+                div.textContent = `${compra.quantidade}x Suco de ${compra.suco.charAt(0).toUpperCase() + compra.suco.slice(1)} - R$${compra.total.toFixed(2)}`;
+                comprasList.appendChild(div);
+            });
+        }
+
+        function limparCompras() {
+            localStorage.removeItem('compras');
+            atualizarCompras();
+        }
+
+        function decreaseQuantity(suco) {
+            const quantityInput = document.getElementById(`quantity-${suco}`);
+            if (quantityInput.value > 1) {
+                quantityInput.value--;
+            }
+        }
+
+        function increaseQuantity(suco) {
+            const quantityInput = document.getElementById(`quantity-${suco}`);
+            quantityInput.value++;
+        }
+
+        // Atualiza a lista de compras ao carregar a página
+        window.onload = function() {
+            atualizarCompras();
+        };
+    </script>
+</body>
+</html>
